@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-image: url("w.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    
+} 
+section{
+    max-width: 85%;
+    margin: 10px auto;
+    border-radius: 30px;
+    
+}
+.tasks .task.done{
+    opacity: 0.5;
+    color: green;
+}
+
+.addTask{
+    display: flex;
+    /* box-shadow: 0 0 5px rgba(0,0,0,0.7); */
+    border-radius:  50px;
+    justify-content: space-between;
+    /* background-color: white; */
+    margin-bottom: 15px;
+}
+.addTask input[type="text"]{
+    padding:10px 20px;
+    width: 68%;
+    border-radius:20px ;
+    border:none;
+    outline: none;
+    box-shadow: 0 0 5px rgba(50,50,50,0.7);
+    font-size: 21px;
+}
+.addTask input[type="submit"]{
+    padding: 10px 20px;
+    width:28%;
+    border-radius:20px ;
+    border: none;
+    background-color: orangered;
+    color: white;
+    font-size: 21px;
+    transition: 0.2s ease;
+}
+@media screen and (max-width:500px) {
+    section{
+        max-width: 98%;
+        margin: 10px auto;
+        border-radius: 30px;
+    }
+    .addTask input[type="submit"]{
+        padding: 10px ;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:300px) {
+    section{
+        max-width: 98%;
+    }
+}
+@media screen and (min-width:800px) {
+    section{
+        max-width: 55%;
+    }
+}
